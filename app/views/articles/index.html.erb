@@ -1,0 +1,19 @@
+<%= link_to 'New Article' , new_article_path %>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <th><%= article.id %></th>
+        <th><%= article.name %></th>
+        <th><%= article.body %></th>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
