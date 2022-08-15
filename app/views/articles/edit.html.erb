@@ -1,0 +1,11 @@
+
+<%= form_with scope: :article ,url: update_article_path, method: :patch, local: true do |f| %>
+    
+    <%= f.label 'Article Title' %><br>
+    <%= f.text_field :name %><br>
+
+    <%= f.label 'Article Description' %><br>
+    <%= f.text_area :body %><br>
+
+    <%= f.submit "Edit Article" %>
+<% end %>
