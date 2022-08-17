@@ -11,4 +11,10 @@ Rails.application.routes.draw do
   patch '/articles/:id' => 'articles#update', as: 'update_article'
   delete '/articles/:id' => 'articles#delete', as: 'delete_article'
 
+  get '/users' => 'user#index'
+  get '/users/new' => 'user#new', as: 'new_user'
+  post '/users' => 'user#create', as: 'create_user'
+  get '/users/edit/:id' => 'user#edit', as: 'edit_user'
+  patch '/users/:id' => 'user#update', as: 'update_user'
+  delete '/users/:id' => 'user#delete', as: 'delete_user'
 end

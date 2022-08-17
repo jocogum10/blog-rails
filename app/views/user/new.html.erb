@@ -1,9 +1,9 @@
-<%= form_with scope: :article ,url: create_article_path, local: true do |f| %>
+<%= form_with scope: :user ,url: create_user_path, local: true do |f| %>
     
     <p>
-        <% if @article.errors.any?  %>
+        <% if @user.errors.any?  %>
             <ul>
-                <% @article.errors.full_messages.each do |message| %>
+                <% @user.errors.full_messages.each do |message| %>
                     <li>
                         <%= message %>
                     </li>
@@ -18,9 +18,9 @@
         <%= f.text_field :name %>
     </p>
     <p>
-        <%= f.label :body %>
+        <%= f.label :password %>
         <br />
-        <%= f.text_area :body %>
+        <%= f.text_area :password %>
     </p>
     <p>
         <%= f.submit %>
