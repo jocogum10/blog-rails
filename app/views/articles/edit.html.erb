@@ -1,11 +1,15 @@
 
 <%= form_with scope: :article ,url: update_article_path, method: :patch, local: true do |f| %>
     
-    <%= f.label 'Article Title' %><br>
-    <%= f.text_field :name %><br>
-
-    <%= f.label 'Article Description' %><br>
-    <%= f.text_area :body %><br>
-
-    <%= f.submit "Edit Article" %>
+    <div class="mb-3">
+    <%= f.label 'Article Title', for:"title", class:"form-label" %>
+    <%= f.text_field :name, class: "form-control", id:"title" %>
+    </div>
+    <div class="mb-3">
+    <%= f.label 'Article Description', for:"description", class:"form-label" %>
+    <%= f.text_area :body, class: "form-control", id:"description" %>
+    </div>
+    <div class="mb-3">
+    <%= f.submit "Edit Article", class:"btn btn-primary" %>
+    </div>
 <% end %>

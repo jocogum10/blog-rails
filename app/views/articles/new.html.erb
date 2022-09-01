@@ -12,17 +12,16 @@
         <% end %>
     </p>
     
-    <p>
-        <%= f.label :name %>
-        <br />
-        <%= f.text_field :name %>
-    </p>
-    <p>
-        <%= f.label :body %>
-        <br />
-        <%= f.text_area :body %>
-    </p>
-    <p>
-        <%= f.submit %>
-    </p>
+    <div class="mb-3">
+        <%= f.label :name, for:"name", class:"form-label" %>
+        <%= f.text_field :name, class: "form-control", id:"name" %>
+    </div>
+    <div class="mb-3">
+        <%= f.label :body, for:"body", class:"form-label" %>
+        <%= f.text_area :body, class: "form-control", id:"body" %>
+    </div>
+    <div class="mb-3">
+        <%= f.submit class: "btn btn-primary" %>
+        <%= link_to "Back to Articles", articles_path, class: "btn btn-primary", role: "button" %>
+    </div>
 <% end %>
