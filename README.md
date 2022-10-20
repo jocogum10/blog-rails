@@ -1,24 +1,33 @@
-# README
+# Blog app using Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+This app is a simple blog app that a user can create, read, update, and delete articles and users entries.
 
 * Ruby version
+```
+$ ruby 3.1.2
+$ Rails 7.0.3.1
+```
 
-* System dependencies
-
-* Configuration
+* Setup
+```
+ $ bundle install
+```
 
 * Database creation
-
-* Database initialization
+```
+ $ rake db:setup
+```
 
 * How to run the test suite
+```
+$ rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+* Starting the application
+```
+$ rails server
+```
 
-* Deployment instructions
-
-* ...
+## UI
+### Login
+![login](https://github.com/jocogum10/trading-app-rails/blob/main/app/assets/images/login.PNG)
