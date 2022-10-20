@@ -29,5 +29,12 @@ $ rails server
 ```
 
 ## UI
-### Login
-![login](https://github.com/jocogum10/trading-app-rails/blob/main/app/assets/images/login.PNG)
+### Homepage
+![home](https://github.com/jocogum10/blog-rails/blob/main/app/assets/images/homepage.PNG)
+
+### Articles
+![articles](https://github.com/jocogum10/blog-rails/blob/main/app/assets/images/articles.PNG)
+
+
+### Users
+![users](https://github.com/jocogum10/blog-rails/blob/main/app/assets/images/users.PNG)
